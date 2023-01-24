@@ -5,18 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Tristen J Hum">
-    <meta name="description" content="W2 Bio">
+    <meta name="description" content="W3 Bio">
     <title>Home</title>
-    
+    <style>
+
+        #site-wrap{
+            background-color: rgb(181, 181, 181);
+            width: 1800px;
+            margin: auto;
+        }
+        .border{
+            border:2px solid black
+
+        }
+        .headerimage{
+            object-fit:cover;
+            height: 150px;
+            box-shadow: 0 0 8px;/*Drop shadows*/
+        }
+        .container {
+            position:relative;
+            text-align: center;
+            color: black;
+        }
+        .top-right {
+            position: absolute;
+            top: 50px;
+            right: 500px ;
+            color: blueviolet;
+            font-weight: bolder;
+            font-size:x-large;
+}
+        .top-right2{
+            position: absolute;
+            top: 75px;
+            right: 438px;
+            color: blueviolet;
+            font-weight: bolder;
+            font-size: x-large
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <!--link to the index and characters pages-->
-        <!--In addition, use a fragment. The "#" to link to the footer of the Character's page-->
-        <a href="Week1/index.html">Week 1</a> | <a href="Week1_Demo/index.html">Week 1 Demo</a> |
-        <a href="Week2IncorrectFiles/index.html">Week 2 Incorrect Files</a> <a href="Weeks2FilesCorrect/index.html">Week 2 Correct Files</a>
-        <br>
-        <a href="Week3_Demo/index.html">Week 3 Demo</a>
-    </nav>
+    <div id="site-wrap" class="wrapper">
+
+        <div id="header">
+            <img src="Menu-images/menuheadercrop.jpg" alt="Menu Header" class="headerimage" style="width:100%" class="container">
+            <div class="top-right">Tristen J Hum</div>
+            <div class="top-right2">SE111.02 Repository</div>
+        </div>
+        
+        <div id="home-links">
+            <nav>
+                 <!--link to the index and characters pages-->
+                <!--In addition, use a fragment. The "#" to link to the footer of the Character's page-->
+                <h2><u>Links</u></h2>
+                
+                <div class="border" style="display:inline;">| <a href="Week1/index.html" class="links">Week 1</a>
+                <a href="Week1_Demo/index.html" class="links"> Week 1 Demo</a>
+                | <a href="Week2IncorrectFiles/index.html" class="links">Week 2 Incorrect Files</a> 
+                |<a href="Weeks2FilesCorrect/index.html" class="links">Week 2 Correct Files</a>
+                | <a href="Week3_Demo/index.html" class="links">Week 3 Demo</a>
+                | <a href="Week3_bio/index.html" class="links">Week 3 Bio</a>
+
+                </nav>
+        </div>
+        
+        <div id="footer">
+            <p>&copy; Tristen J Hum | SE111.02 </SE111></p>
+            <br> 
+            <a href="index.html#header">| To Top of Page |</a>
+    </div>
 </body>
 </html>
