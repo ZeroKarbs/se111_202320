@@ -10,7 +10,11 @@
     <style>
         /* write CSS under Title*/
         /* Select elements by TYPE. - applies to all of that tag type*/
-        
+        .paragraph_tab {
+            position:relative;
+            max-width:45%;
+            align-self: justify;
+        }
         #site_wrap{
             background-color: grey;
             width: 1600px;
@@ -23,6 +27,46 @@
             position:relative;
             text-align: center;
             color: black;
+        }
+        .list{
+            position: relative;
+            left:50px;
+        }
+        .image_small{
+            box-shadow: 0 0 8px;
+            max-height: 350px;
+           
+        }
+        #goku{
+            position: relative;
+            left:50px;
+        }
+        #rose{
+            position:relative;
+            left:100px;
+            
+        }
+        #percy{
+            position: relative;
+            left: 150px;
+        }
+        #demon_slayer{
+            position: relative;
+            max-width: 625px;
+            left: 200px;
+
+        }
+        #piano{
+            position: absolute;
+            left:500px;
+            top:225px;
+            max-width: 400px;
+        }
+        #muay_thai{
+            position:absolute;
+            right:500px;
+            top:225px;
+            max-width:355px
         }
     </style>
 </head>
@@ -41,8 +85,34 @@
             <a href="#footer">|Bottom of Page|</a> </div><!--/ nav-->
         <hr color="black">
         <div id="main_content">
-            <h2>Content For <b>Home</b> Page</h2>
-            <h3>hobbies</h3>
+            <center><h2>Hobbies and Interests</h2></center>
+            <hr color="black" width="800px">
+            <div class="list">
+                <ul>
+                    <li>Reading</li>
+                    <br>
+                    <li>Playing video games</li>
+                    <br>
+                    <li>Using Unreal Engine to create games</li>
+                    <br>
+                    <li>Drawing</li>
+                    <br>
+                    <li>Volleyball</li>
+                    <br>
+                    <li>Muay Thai</li>
+                    <br>
+                    <li>Piano</li>
+                    <br>
+                    <li>Watching Anime</li>
+                </ul>
+            
+            </div><!--end list box-->
+            <img id ='goku' src="images/Goku_ssjss.jpg" alt="my digital art of Goku" class="image_small">
+            <img id ='rose' src="images/Rose.jpg" alt="my digital art of a rose" class="image_small">
+            <img id ='percy' src="images/pj2.png" alt="percy jackson and the lightning thief cover" class="image_small">
+            <img id ='demon_slayer' src="images/demonslayer.webp" alt="Tanjiro and the rest of the main characters in Demon Slayer Kimetsu No Yaiba" class="image_small">
+            <img id='piano' src='images/piano.jpg' alt='picture of a piano' class="image_small">
+            <img id='muay_thai' src='images/MuayThai.jpg' alt='picture of a professional muay thai fight' class="image_small">
         </div><!--/ main_content -->
         <hr color="black">
         <div id="footer">
