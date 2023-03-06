@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tristen J Hum">
+    <meta name="description" content="Week 6 JavaScript Calculator">
+    <title>JavaScript Calculator</title>
+</head>
+<body>
+    <script>
+        var pay = prompt('How much do you make an hour')
+        var hours = prompt('How many hours do you work in a two week pay period?')
+        var grossUnrounded = hours * pay
+        var gross = grossUnrounded.toFixed(2)
+        var taxesUnrounded = gross * .2
+        var taxes = taxesUnrounded.toFixed(2)
+        var netUnrounded = gross - taxes
+        var net = netUnrounded.toFixed(2)
+        alert(`your gross pay is: $${gross}`)
+        alert(`uncle sam is taking $${taxes} from your paycheck`)
+        alert(`your net pay is: $${net}`)
+    </script>
+
+
+</body>
+</html>
