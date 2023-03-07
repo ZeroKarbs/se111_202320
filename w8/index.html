@@ -39,13 +39,13 @@
     <script>
 	
 		//Store the elements (tags) in variables
-		
-
+		var fname = document.querySelector(`#first`)
+		var lname = document.querySelector(`#last`)	
 		//Make an array to store the people
-		
+		var people = []
 
 		//Make the button clickable. When clicked it calls the calcAndDisplay function.
-		
+		document.querySelector(`#button`).addEventListener(`click`,calcAndDisplay)
 		
 		/*-----------------------------------------------------
 		Will add objects into the people array. 
@@ -70,16 +70,14 @@
 				//2. last: will be a string that uses the last Input's value
 
             var person = {
-
-
-
+				first: fname.value, last: lname.value
             }//end of person object
 
 
 
 
 			//Add the person object into the people array by using the .push() array method.
-			
+			people.push(person)
 
 			//Bubble sort people on the last name
 			for(let i=0; i < people.length-1; i++)
@@ -96,18 +94,19 @@
 			}//end of bubble sort algorithm!
 
 			//console.log the people array to check that the people array is formatted correctly and is populated with the correct objects
-			
+			console.log(people)
 
 			//create a variable called 'output' that has an empty string value stored to 
-			
+			var output = ''
 
 			//Loop through the objects in the people array
-			for()
+			for(let i = 0; i < people.length; i++)
             {
 
 				//Loop through each property in the object
 				for(key in people[i])
                 {
+					output += `<p><b>${key.toUpperCase()}</b>: ${people[i][key]}</p>`
 					//The output should use the key set to uppercase using the .toUpperCase() String method as a title and the value of the key.
 					//Output will resemble:
 					//FIRST: Ivan
@@ -128,6 +127,10 @@
 
 
 		}
+				
+
+
+
 	
     </script>
     
