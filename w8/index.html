@@ -37,7 +37,7 @@
 	<!--The script tag should go after the HMTL, but inside of the body.-->
 	<!--JavaScript cannot find tags, if they are not parsed before the script runs-->
     <script>
-	
+		var count = 0
 		//Store the elements (tags) in variables
 		var fname = document.querySelector(`#first`)
 		var lname = document.querySelector(`#last`)	
@@ -45,7 +45,7 @@
 		var people = []
 
 		//Make the button clickable. When clicked it calls the calcAndDisplay function.
-		document.querySelector(`#button`).addEventListener(`click`,calcAndDisplay)
+		document.querySelector(`#button`).addEventListener(`click`,calcAndDisplay,count+1)
 		
 		/*-----------------------------------------------------
 		Will add objects into the people array. 
@@ -101,7 +101,8 @@
 
 			//Loop through the objects in the people array
 			for(let i = 0; i < people.length; i++)
-            {
+            { 
+				output += `<h3>Person List:</h3>`
 
 				//Loop through each property in the object
 				for(key in people[i])
@@ -119,7 +120,7 @@
 
 
 			}//end of loop going through people array to edit 'output'
-
+			document.querySelector(`#output`).innerHTML = output
 				//log the output string
 				//replace the outputDiv's inner HTML with the output string
 				
